@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+<body class="font-josefin">
+ 
+    <header class="w-full h-24 flex justify-evenly items-center fixed top-0 bg-white">
+        <p class="text-4xl font-semibold">VM</p>
+        <div class="flex w-10/12 justify-end text-primaryColor">
+            <ul class="flex w-72 text-xl font-bold justify-between">
+              <a href="#header"><li>Inicio</li></a>
+              <a href="#projects"><li>Projetos</li></a>
+              <a href="#skills"><li>Skills</li></a>
+              <a href="#aboutme"><li>Sobre</li></a> 
+            </ul>
+        </div>
+    </header>
+
+    <div id="header">
+    <div class="flex w-full justify-end items-center" style="height:100vh;">
+        <div class="w-full flex flex-col items-end font-bold ">
+            <h1 class="flex  w-2/4 text-8xl text-secondaryColor">Vinicius Modesto</h1>
+                <div class="flex  w-1/4">
+                    <h2 class="text-3xl">Front-end Developer</h2>
+                </div>  
+                <div class="flex mt-4 w-1/5">
+                   <a href="/src/assets/Vinicius Modesto.pdf" download="Vinicius Modesto.pdf"> <button class="w-44 h-12 rounded-3xl bg-blue500 text-white">Download CV</button></a>
+                </div>
+                <div class="w-14% flex absolute z-9999 h-2/5 bottom-80">
+                  <div class="flex w-6 justify-between">
+                     <div class="h-100 w-2px bg-darkBlue"></div>
+                     <div class="h-136% w-1 bg-darkBlue"></div>
+                  </div>
+        </div>
+     </div>
+   
+     </div>
+    </div>
+   
+      <div id="skills">
+        <div class="w-full flex flex-col h-96 justify-center items-center bg-blue-500">
+          <img src="/src/img/skills.svg" alt="mind-icon bg-blue-500">
+          <h1 class=" font-bold text-2xl uppercase  text-white">Skills</h1>
+        </div>
+        <div class="swiper bg-blue-500 ">
+          <div class="swiper-wrapper w-full flex justify-center items-center">
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/git.svg" alt="git icon"></div>
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/html.svg" alt="html icon"></div>
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/js.svg" alt="js icon"></div>
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/vue.svg" alt="vue icon"></div>
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/css.svg" alt="css icon"></div>
+              <div class="swiper-slide"><img class="w-48 h-48" src="/src/img/git.svg" alt="git icon"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div id="projects">
+        <div class="w-full h-full flex flex-col justify-between items-center">
+            <div class="flex h-72 flex-col justify-center items-center">
+              <img src="/src/img/work.svg" alt="work-icon">
+              <h1 class=" text-5xl text-black">Projetos</h1>
+            </div>
+            <div class="w-full h-72 flex flex-col items-center">
+              <p class=" text-base font-bold text-black">Você pode encontrar todos meus projetos aqui!</p>
+              <a href="https://github.com/vmc36"><img src="/src/img/github.svg " class ="h-56 w-56" alt="github-icon"></a>
+            </div>
+        </div>
+      </div>
+
+  
+      <div id="aboutme">
+
+        <div class="w-full h-full flex flex-col justify-between items-center  bg-blue-500">
+          <img src="/src/img/aboutme.svg" alt="aboutme-icon">
+          <h1 class=" text-5xl text-white">Sobre</h1>
+          
+            <ul class="collapsible expandable w-4/5 h-full flex flex-col justify-around border-none shadow-none">
+              <li class="mb-5">
+                <div class="collapsible-header rounded-t-2xl flex items-center border-none"> <span class="w-5 text-4xl text-primaryColor"> - </span><p class="text-2xl">Formação</p></div>
+                <div class="collapsible-body rounded-b-2xl bg-white text-tertiaryColor"><p class="text-xl">Graduado em 2019 em Sistemas de Informação pela Universidade Paranaense - UNIPAR</p></div>
+              </li>
+                <li class="mb-5">
+                  <div class="collapsible-header rounded-t-2xl flex items-center border-none"> <span class="w-5 text-4xl text-primaryColor"> - </span><p class="text-2xl">Desenvolvedor</p></div>
+                  <div class="collapsible-body rounded-b-2xl bg-white text-tertiaryColor"><p class="text-xl">Paralelamente atuo como 
+                    desenvolvedor Front-end em um projeto de reconstrução do site da empresa. Nesse projeto 
+                    obtive experiência com: HTML5, CSS3, JS, VueJS, TailwindCSS, Versionamento de Código (git), Figma e Metodologias Ágeis (Scrum).</p>
+                  </div>
+                </li>
+              <li class="mb-5">
+                <div class="collapsible-header rounded-t-2xl flex items-center border-none "> <span class="w-5 text-4xl text-primaryColor"> - </span><p class="text-2xl">Analista de Suporte</p></div>
+                <div class="collapsible-body rounded-b-2xl bg-white text-tertiaryColor "><p class="text-xl">Atuando como Analista de Supote na Sia.Com Sistemas e informática. Atendimento aos clientes, Análise de bugs, Pedidos de correção, implantação e atualização de todo o sistema.(2019 - Atualmente) </p></div>
+              </li>
+              <li class="mb-5">
+                <div class="collapsible-header rounded-t-2xl flex items-center border-none "> <span class="w-5 text-4xl text-primaryColor"> - </span><p class="text-2xl">Estágiário TJPR</p></div>
+                <div class="collapsible-body rounded-b-2xl bg-white text-tertiaryColor "><p class="text-xl">Atuando no núcleo de informática na manutenção, atendimento remoto e assistência técnica. (2017 - 2018) </p></div>
+              </li>
+              <li>
+                <div class="collapsible-header rounded-t-2xl flex items-center border-none "> <span class="w-5 text-4xl text-primaryColor"> - </span><p class="text-2xl">Técnico de Informática</p></div>
+                <div class="collapsible-body rounded-b-2xl bg-white text-tertiaryColor "><p class="text-xl">Codeven Games e Informática - Manutenção a Computadores. (2014 - 2016)</p></div>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+</body>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/materializecss.js"></script>
+
+</html>
