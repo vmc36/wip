@@ -1,19 +1,10 @@
-const swiper = new Swiper('.swiper', {
-
-    autoplay:{
-      delay:1000
-    },
-
-    slidesPerView: 2,
-    effect: 'coverflow',
-    spaceBetween:1,
-    coverflowEffect: {
-    rotate: 1,
-    stretch:1,
-    slideShadows: false,
-    centeredSlides:true,
-    rewind:true,
-  },
+$(document).ready(function(){
+  $('.carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 700,
+    prevArrow:false,
+    nextArrow:false,
   });
-
-
+});

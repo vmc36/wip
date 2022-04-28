@@ -472,16 +472,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .top-0 {
   top: 0px;
 }
 
-.bottom-80 {
-  bottom: 20rem;
+.z-50 {
+  z-index: 50;
 }
 
 .mt-4 {
@@ -490,6 +486,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .flex {
@@ -502,14 +502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-12 {
   height: 3rem;
-}
-
-.h-2\/5 {
-  height: 40%;
-}
-
-.h-136\% {
-  height: 136px;
 }
 
 .h-96 {
@@ -530,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-56 {
   height: 14rem;
+}
+
+.h-60 {
+  height: 15rem;
 }
 
 .w-full {
@@ -560,26 +556,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 11rem;
 }
 
-.w-14\% {
-  width: 15%;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-2px {
-  width: 2px;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -594,6 +570,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .flex-col {
@@ -655,14 +635,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 94 209 / var(--tw-bg-opacity));
 }
 
-.bg-darkBlue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 49 106 / var(--tw-bg-opacity));
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .font-josefin {
@@ -740,6 +720,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(133 160 191 / var(--tw-text-opacity));
 }
 
+.no-underline {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 .shadow-none {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
@@ -762,4 +747,102 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 14px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #15316A;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.hover\:bg-slate-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-violet-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 58 237 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondaryColor:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 56 122 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-tertiaryColor:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(133 160 191 / var(--tw-bg-opacity));
+}
+
+.hover\:shadow-md:hover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.focus\:bg-secondaryColor:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 56 122 / var(--tw-bg-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-violet-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(196 181 253 / var(--tw-ring-opacity));
+}
+
+.active\:bg-violet-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 40 217 / var(--tw-bg-opacity));
 }
