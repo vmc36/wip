@@ -811,12 +811,8 @@ a:hover:after {
     width: 95%;
   }
 
-  .sm\:w-72\% {
-    width: 72%;
-  }
-
-  .sm\:w-72 {
-    width: 18rem;
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:w-1\/4 {
